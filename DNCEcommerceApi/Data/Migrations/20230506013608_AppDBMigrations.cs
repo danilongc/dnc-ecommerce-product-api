@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace DNCEcommerceApi.Migrations
+namespace DNCEcommerceApi.Data.Migrations
 {
     /// <inheritdoc />
     public partial class AppDBMigrations : Migration
