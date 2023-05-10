@@ -1,0 +1,18 @@
+version: '3'
+services:
+  mysql:
+    container_name: mysql-ecommerce
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - '3306:3306'
+  api:
+    depends_on:
+      - mysql
+    restart: always
+    build: 
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - 8080:80

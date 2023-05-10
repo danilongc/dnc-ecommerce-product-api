@@ -2,4 +2,7 @@
 This is a sample API built in .NET 6
 
 - Enabled support to the OpenAPI/Swagger
-- Disabled top-level-statements
+- It uses MySQL Data Base
+
+
+If you have the Docker installed in your machine, you can run this executing the compose inside /DNCEcommerceApi
