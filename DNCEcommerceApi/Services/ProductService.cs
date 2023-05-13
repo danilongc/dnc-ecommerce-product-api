@@ -74,6 +74,7 @@ public class ProductService : IProductService
         }
 
         ReadProductDto readProductDto = _mapper.Map<ReadProductDto>(product);
+        readProductDto.Name=$"Nome: {readProductDto.Name}";
         return Task.FromResult<ReadProductDto?>(readProductDto);
     }
 
